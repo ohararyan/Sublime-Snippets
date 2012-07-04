@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+@include backgroundGradImg (${1:image url}, ${2:position-x-axis}, ${3:position-y-axis}, ${4:top-color}, ${4:bottom-color});
+]]></content>
+	<tabTrigger>ibgi</tabTrigger>
+    <description>SASS INCLUDE - backgroundGradImg</description>
+</snippet>

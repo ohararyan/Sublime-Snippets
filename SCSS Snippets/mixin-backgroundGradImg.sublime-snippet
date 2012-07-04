@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+@mixin backgroundGradImg (\$imgurl, \$pos1, \$pos2, \$topColor, \$bottomColor){
+	background: \$topColor;
+	background: url($imgurl) no-repeat \$pos1 \$pos2; /* fallback */
+	background: url($imgurl) no-repeat \$pos1 \$pos2, -webkit-gradient(linear, left top, left bottom, from(\$topColor), to(\$bottomColor)); /* Saf4+, Chrome */
+	background: url($imgurl) no-repeat \$pos1 \$pos2, -webkit-linear-gradient(top, \$topColor, \$bottomColor); /* Chrome 10+, Saf5.1+ */
+	background: url($imgurl) no-repeat \$pos1 \$pos2,    -moz-linear-gradient(top, \$topColor, \$bottomColor); /* FF3.6+ */
+	background: url($imgurl) no-repeat \$pos1 \$pos2,     -ms-linear-gradient(top, \$topColor, \$bottomColor); /* IE10 */
+	background: url($imgurl) no-repeat \$pos1 \$pos2,      -o-linear-gradient(top, \$topColor, \$bottomColor); /* Opera 11.10+ */
+	background: url($imgurl) no-repeat \$pos1 \$pos2,         linear-gradient(top, \$topColor, \$bottomColor); /* W3C */
+}
+]]></content>
+	<tabTrigger>mbgi</tabTrigger>
+    <description>SASS MIXIN - backgroundGradImg</description>
+</snippet>
